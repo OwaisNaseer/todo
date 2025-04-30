@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SHaM5uF4Ef8ZgQ3V/j1H0Gm3Bq8aKZYFq1w6aogAVWi0u1K0YbN9G3Rav+fKnl2Pv2Bskek8SFGCGrH1RAcCQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      #list-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        overflow: auto; 
+        max-height: 240px;
+      }
+    
+      #list-container::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <h3 class="left-heading">Todo</h3>
+      </div>
+
+      <div class="right-container">
+        <div class="inner-right-container">
+          <div class="todo-header">
+            <div class="time-div">
+              <h5 id="current-date" class="date-text"></h5>
+              <h2 id="current-time" class="time-text"></h2>
+            </div>
+
+            <div class="todo-container" style="position: relative">
+              <input
+                type="text"
+                id="title-input"
+                placeholder="Add task"
+                class="input-class-name"
+              />
+              <button
+                id="add-date-and-time"
+                style="
+                  position: absolute;
+                  top: 55px;
+                  right: 155px;
+                  rotate: 90deg;
+                  border: none;
+                "
+              >
+                >
+              </button>
+              <button id="add-button" class="add-button">Add</button>
+
+              <input
+                type="datetime-local"
+                id="datetime-input"
+                style="
+                  background-color: #ebeff2;
+                  width: 59.2%;
+                  position: absolute;
+                  right: 141px;
+                  top: 75px;
+                  color: #888888;
+                  padding: 15px;
+                  border: none;
+                  border-bottom-left-radius: 10px;
+                  border-bottom-right-radius: 10px;
+                  font-size: 18px;
+                  display: none;
+                "
+              />
+
+              <div style="display: flex; gap: 10px; margin-top: 10px; width: 100%;">
+                <div id="task-screen" style="background-color: blue; color: white; padding: 5px; border-radius: 10px; cursor: pointer;">Tasks</div>
+                <div id="done-screen" style="padding: 5px; cursor: pointer;">Done</div>
+              </div>
+              <div id="list-container" > <p>No tasks added.</p></div>
+
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

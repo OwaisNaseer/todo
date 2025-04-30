@@ -1,0 +1,144 @@
+body {
+  background-color: #eeeeee;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 90vh;
+}
+.left-container {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.left-heading {
+  color: #007fdb;
+  font-size: 96px;
+  font-weight: bold;
+}
+.right-container {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.inner-right-container {
+  width: 430px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+}
+.todo-header {
+  height: 202px;
+  background-image: url("./Rectangle.png");
+  background-size: cover;
+}
+.time-div {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.time-text {
+  font-weight: normal;
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.date-text {
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.todo-container {
+  width: 100%;
+  height: 182%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 20px;
+}
+.input-class-name {
+  width: 65%;
+  margin-top: 20px;
+  background-color: #ebeff2;
+  border: none;
+  color: #888888;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.add-button {
+  /* background-color: #20eeb0; */
+  background-color: #888888;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: not-allowed;
+}
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-top: 20px;
+}
+.list-time {
+  color: #888888;
+  padding: 0;
+  margin: 0;
+}
+.list-date {
+  padding: 0;
+  margin: 0;
+}
+
+.list-title {
+  padding: 0;
+  margin: 0;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.get-time-input {
+  display: none;
+}
+.done-circle {
+  width: 24px;
+  height: 24px;
+  border: 10px;
+  border-radius: 100%;
+  border-color: #007fdb;
+  background: #007fdb;
+}
+
+.list-title {
+  font-size: 18px;
+  font-weight: bold;
+ 
+}
+
+.status-done {
+  color: green;
+  font-size: 14px;
+  margin-left: 2px;
+
+}
+
+.status-pending {
+  color: red;
+  font-size: 14px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
